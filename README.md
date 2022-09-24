@@ -1,4 +1,4 @@
-# that project is focusing on different of tempreature locally and globally
+# that project is focusing on different and the similarity of tempreature locally and globally
  
 this small project made by <b>Abdullah Alqahtani<b>
 ## An outline
