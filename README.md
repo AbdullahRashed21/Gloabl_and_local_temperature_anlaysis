@@ -1,7 +1,58 @@
 # that project is focusing on different of tempreature locally and globally
  
 this small project made by <b>Abdullah Alqahtani<b>
+## An outline
+<b> What tools did I use for each step? (Python, SQL, Excel, etc)</b>
+ - extract the data (SQL) <br><br>
+ for gloabl data <br>
 
+ ```sql
+SELECT * FROM global_data;
+ ```
+for local data <br>
+
+ ```sql
+SELECT * FROM global_data;
+ ```
+
+ - clean data (Python - pandas)
+ - visualization (python - seaborn)
+
+<b>How did you calculate the moving average?</b>
+I am using the following method
+```python
+ data['avg_temp'].expanding().mean()
+```
+<b>What were your key considerations when deciding how to visualize the trends?</b>
+
+- I consedered X axis the time which is years and I consedered Y axis the moving AVG 
+
+## Line chart 
+
+<b> Global chart
+
+
+<img src="Gloabl_chart_output.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
+<br>
+ <br>
+
+<b> Local chart</b>
+<br>
+ <br>
+<img src="Riyadh_chart_output.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
+
+
+**Note** we use Moving AVG
+
+<br>
+ <br>
+ 
 ## questions
 * Is your city hotter or cooler on average compared to the global average? Has the difference been consistent over time?
 
