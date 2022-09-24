@@ -47,6 +47,12 @@ I am using the following method
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
+<b>subplot
+<br>
+ <br>
+<img src="subfig.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
 
 
 **Note** we use Moving AVG
@@ -92,7 +98,27 @@ x=(riyad['year']),y=(riyad['avg_temp'].expanding().mean()),kind='line',aspect=(1
      this is Riyadh chart we can see there is a continuous rise and most of the time the temp between 24 and 25
 **NOTE** we use Moving Avg
 
-so the answer of <u>Is your city hotter or cooler on average compared to the global average? Has the difference been consistent over time?</u>
+To show them in subplot we use <br>
+
+```python
+fig,plot =plt.subplots()
+plot= sns.lineplot(x=riyad['year'], y=riyad['avg_temp'].expanding().mean())
+plot2 = sns.lineplot(x=global_df['year'], y=global_df['avg_temp'].expanding().mean())
+fig.legend(['Riyadh','Gloabl'])
+fig.suptitle('temp data')
+fig.set_figheight(5)
+fig.set_figwidth(9)
+plot.set_xlabel('Time by years')
+plot.set_ylabel('Moving AVG ')
+fig.savefig('subfig.jpg')
+```
+<img src="subfig.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
+**NOTE** we use Moving Avg
+
+<b>so the answer of</b> <u>Is your city hotter or cooler on average compared to the global average? Has the difference been consistent over time?</u>
 
 
 - Riyadh is hotter than the world average
