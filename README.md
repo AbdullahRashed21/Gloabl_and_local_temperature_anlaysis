@@ -12,7 +12,8 @@ SELECT * FROM global_data;
 for local data <br>
 
  ```sql
-SELECT * FROM global_data;
+SELECT * FROM city_data 
+WHERE city='Riyadh';
  ```
 
  - clean data (Python - pandas)
