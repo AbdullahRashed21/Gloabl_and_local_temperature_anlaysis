@@ -78,7 +78,7 @@ x=(global_df['year']),y=(global_df['avg_temp'].expanding().mean()),kind='line',a
 ).set(title='Gloabl temp').set_ylabels('moving avg').set_xlabels('years')
 ```
 
-<img src="Gloabl_chart_output.jpg"
+<img src="Galoabl_chart_output.jpg"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
      
